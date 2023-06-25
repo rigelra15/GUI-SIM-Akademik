@@ -1,0 +1,46 @@
+// #include <wx/wx.h>
+
+// class CombinedFrame : public wxFrame
+// {
+// private:
+//     wxButton* m_button;
+//     wxStaticText* m_staticText;
+
+// public:
+//     CombinedFrame(const wxString& title) : wxFrame(NULL, wxID_ANY, title)
+//     {
+//         wxPanel* panel = new wxPanel(this, wxID_ANY);
+//         wxBoxSizer* sizer = new wxBoxSizer(wxVERTICAL);
+
+//         m_button = new wxButton(panel, wxID_ANY, "Click Me");
+//         m_button->Bind(wxEVT_BUTTON, &CombinedFrame::OnButtonClick, this);
+
+//         m_staticText = new wxStaticText(panel, wxID_ANY, "Initial Content", wxDefaultPosition, wxDefaultSize, wxALIGN_CENTRE);
+
+//         sizer->Add(m_button, 0, wxALL, 10);
+//         sizer->Add(m_staticText, 1, wxEXPAND | wxALL, 10);
+//         panel->SetSizer(sizer);
+//     }
+
+//     void OnButtonClick(wxCommandEvent& event)
+//     {
+//         m_button->Hide();
+//         m_staticText->SetLabel("New Content");
+//         m_staticText->Show();
+//         Layout();
+//     }
+// };
+
+// class MyApp : public wxApp
+// {
+// public:
+//     virtual bool OnInit()
+//     {
+//         CombinedFrame* frame = new CombinedFrame("Content Change Example");
+//         frame->Show();
+
+//         return true;
+//     }
+// };
+
+// wxIMPLEMENT_APP(MyApp);
